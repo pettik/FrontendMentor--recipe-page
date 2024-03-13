@@ -1,0 +1,138 @@
+/*  Outfit font */
+@font-face {
+    font-family: 'Outfit'; /* Choose a suitable font name */
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  Young Serif font */
+@font-face {
+    font-family: 'YoungSerif'; /* Choose a suitable font name */
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);   
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+/*=============== BASE ===============*/
+body {
+  font-family: 'Outfit', sans-serif; 
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--white);
+  position: relative;
+  min-height: 2043px;
+}
+
+body::before{
+    content:'';
+    position:absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:url('../../design/mobile-design.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    z-index:-1;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.attribution{
+    display:none;
+}
+
+/*=============== MAIN ===============*/
+.container {
+  background: var(--white);
+  width: 100%;
+max-width:375px;
+margin: 0 auto;
+  opacity: .3;
+}
+
+.container img{
+    width: 100%;
+}
+
+.container-wrapper{
+padding:2.5rem 1rem 2.5rem 1.35rem;
+}
+
+h1{
+    font-family: 'YoungSerif', serif; 
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+}
+
+.container-wrapper p{
+    line-height: 1.5;
+    letter-spacing: .2px;
+    
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    body{
+        min-height: 1995px;
+        background-color: var(--eggshell);
+    }
+
+    body::before{
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
+        content:'';
+        width: 100%;
+        height: 100%;
+        background:url('../../design/desktop-design2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -1.3rem;
+        z-index:-1;
+        opacity: .7;
+        margin-top: -8.75rem;
+        border:1px solid green;
+    }
+
+    .container{
+        margin-top: 8.75rem;
+        max-width: 738px;
+        opacity: .5;
+        border:1px solid red;
+        padding: 2.4rem
+    }
+}
