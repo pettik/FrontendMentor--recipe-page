@@ -1,6 +1,7 @@
 /*  Outfit font */
 @font-face {
-  font-family: 'Outfit'; /* Choose a suitable font name */
+  font-family: 'Outfit';
+  /* Choose a suitable font name */
   src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -8,7 +9,8 @@
 
 /*  Young Serif font */
 @font-face {
-  font-family: 'YoungSerif'; /* Choose a suitable font name */
+  font-family: 'YoungSerif';
+  /* Choose a suitable font name */
   src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -80,7 +82,7 @@ ul {
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
-  /* opacity: 0.3; */
+  opacity: 0.6;
 }
 
 .container img {
@@ -107,6 +109,7 @@ h1 {
 /*=============== Preparation time ===============*/
 .preparation-time {
   margin-top: 2rem;
+  margin-bottom: 1.3rem;
   padding: 1.4rem 1.7rem;
   background: var(--rose-white);
   border-radius: 0.5rem;
@@ -121,21 +124,65 @@ h1 {
 .preparation-time ul {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  list-style: none; /* Remove default list style */
+  list-style: none;
+  /* Remove default list style */
+}
+
+.preparation-time ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 .preparation-time ul li {
-  margin-bottom: 0.2rem;
-  display: flex; /* Use flexbox */
-  align-items: flex-start; /* Align items at the start */
+  display: flex;
+  /* Use flexbox */
+  align-items: center;
+  /* Align items at the start */
 }
 
 .preparation-time ul li span {
-  min-width: 100px; /* Set a minimum width for label */
-  display: inline-block; /* Make span behave like a block element */
+  min-width: 100px;
+  /* Set a minimum width for label */
+  display: inline-block;
+  /* Make span behave like a block element */
 }
 
 .preparation-time ul li::before {
+  content: '•';
+  font-size: 1.5rem;
+  color: var(--dark-raspberry);
+  margin-right: 1.5rem;
+}
+
+/* Ingredients section */
+.title {
+  font-family: 'YoungSerif';
+  color: var(--nutmeg);
+  font-size: 1.77rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.ingredients ul {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  list-style: none;
+  /* Remove default list style */
+}
+
+.ingredients ul li {
+  display: flex;
+  /* Use flexbox */
+  align-items: center;
+  /* Align items at the start */
+  line-height: 1.4;
+}
+
+.ingredients ul li span {
+  display: inline-block;
+  /* Make span behave like a block element */
+}
+
+.ingredients ul li::before {
   content: '•';
   font-size: 1.5rem;
   color: var(--dark-raspberry);
