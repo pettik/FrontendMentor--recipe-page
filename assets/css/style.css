@@ -90,7 +90,7 @@ ul {
 }
 
 .container-wrapper {
-  padding: 2.5rem 1rem 2.5rem 1.35rem;
+  padding: 2rem 1rem 2rem 1.9rem;
 }
 
 h1 {
@@ -103,13 +103,13 @@ h1 {
 
 .container-wrapper p {
   line-height: 1.5;
-  letter-spacing: 0.2px;
+  padding-right: 0.8rem;
 }
 
 /*=============== Preparation time ===============*/
 .preparation-time {
   margin-top: 2rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.45rem;
   padding: 1.4rem 1.7rem;
   background: var(--rose-white);
   border-radius: 0.5rem;
@@ -117,33 +117,32 @@ h1 {
 
 .preparation-time h3 {
   color: var(--dark-raspberry);
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
+  letter-spacing: 0.75px;
+  margin-bottom: 0.7rem;
 }
 
 .preparation-time ul {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 0.85rem;
+  padding-left: 0.25rem;
   list-style: none;
-  /* Remove default list style */
 }
 
 .preparation-time ul li:not(:last-child) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.preparation-time ul li:first-of-type {
+  line-height: 1.7;
 }
 
 .preparation-time ul li {
   display: flex;
-  /* Use flexbox */
   align-items: center;
-  /* Align items at the start */
 }
 
 .preparation-time ul li span {
   min-width: 100px;
-  /* Set a minimum width for label */
   display: inline-block;
-  /* Make span behave like a block element */
 }
 
 .preparation-time ul li::before {
@@ -166,20 +165,16 @@ h1 {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   list-style: none;
-  /* Remove default list style */
 }
 
 .ingredients ul li {
   display: flex;
-  /* Use flexbox */
   align-items: center;
-  /* Align items at the start */
   line-height: 1.4;
 }
 
 .ingredients ul li span {
   display: inline-block;
-  /* Make span behave like a block element */
 }
 
 .ingredients ul li::before {
