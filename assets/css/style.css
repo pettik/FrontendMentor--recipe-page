@@ -1,217 +1,312 @@
 /*  Outfit font */
 @font-face {
-  font-family: 'Outfit';
-  /* Choose a suitable font name */
-  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Outfit';
+	/* Choose a suitable font name */
+	src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /*  Young Serif font */
 @font-face {
-  font-family: 'YoungSerif';
-  /* Choose a suitable font name */
-  src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'YoungSerif';
+	/* Choose a suitable font name */
+	src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-  --nutmeg: hsl(14, 45%, 36%);
-  --dark-raspberry: hsl(332, 51%, 32%);
-  --white: hsl(0, 0%, 100%);
-  --rose-white: hsl(330, 100%, 98%);
-  --eggshell: hsl(30, 54%, 90%);
-  --light-grey: hsl(30, 18%, 87%);
-  --wenge-brown: hsl(30, 10%, 34%);
-  --dark-charcoal: hsl(24, 5%, 18%);
+	--nutmeg: hsl(14, 45%, 36%);
+	--dark-raspberry: hsl(332, 51%, 32%);
+	--white: hsl(0, 0%, 100%);
+	--rose-white: hsl(330, 100%, 98%);
+	--eggshell: hsl(30, 54%, 90%);
+	--light-grey: hsl(30, 18%, 87%);
+	--wenge-brown: hsl(30, 10%, 34%);
+	--dark-charcoal: hsl(24, 5%, 18%);
 }
 
 /*=============== BASE ===============*/
 body {
-  font-family: 'Outfit', sans-serif;
-  font-size: 16px;
-  font-optical-sizing: auto;
-  font-style: normal;
-  background-color: var(--white);
-  position: relative;
-  min-height: 2043px;
+	font-family: 'Outfit', sans-serif;
+	font-size: 16px;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background-color: var(--white);
+	position: relative;
+	min-height: 2043px;
 }
 
 body::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../../design/mobile-design.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../../design/mobile-design.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 
-  z-index: -1;
+	z-index: -1;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 .attribution {
-  display: none;
+	display: none;
 }
 
 /*=============== MAIN ===============*/
 
 .container {
-  background: var(--white);
-  width: 100%;
-  max-width: 375px;
-  margin: 0 auto;
-  opacity: 0.6;
+	background: var(--white);
+	width: 100%;
+	max-width: 375px;
+	margin: 0 auto;
+	opacity: 0.6;
 }
 
 .container img {
-  width: 100%;
+	width: 100%;
+	min-height: 171px;
 }
 
 .container-wrapper {
-  padding: 2rem 1rem 2rem 1.9rem;
+	padding: 2rem 1.8rem .5rem 1.9rem;
 }
 
 h1 {
-  font-family: 'YoungSerif', serif;
-  font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 1.1;
-  margin-bottom: 1.25rem;
+	font-family: 'YoungSerif', serif;
+	font-weight: 400;
+	font-size: 2.25rem;
+	line-height: 1.1;
+	margin-bottom: 1.25rem;
 }
 
 .container-wrapper p {
-  line-height: 1.5;
-  padding-right: 0.8rem;
+	line-height: 1.5;
+
 }
 
 /*=============== Preparation time ===============*/
 .preparation-time {
-  margin-top: 2rem;
-  margin-bottom: 1.45rem;
-  padding: 1.4rem 1.7rem;
-  background: var(--rose-white);
-  border-radius: 0.5rem;
+	margin-top: 2rem;
+	margin-bottom: 1.45rem;
+	padding: 1.4rem 1.7rem;
+	background: var(--rose-white);
+	border-radius: 0.5rem;
 }
 
 .preparation-time h3 {
-  color: var(--dark-raspberry);
-  letter-spacing: 0.75px;
-  margin-bottom: 0.7rem;
+	color: var(--dark-raspberry);
+	letter-spacing: 0.75px;
+	margin-bottom: 0.7rem;
 }
 
 .preparation-time ul {
-  padding-right: 0.85rem;
-  padding-left: 0.25rem;
-  list-style: none;
+	padding-right: 0.85rem;
+	padding-left: 0.25rem;
+	list-style: none;
 }
 
 .preparation-time ul li:not(:last-child) {
-  margin-bottom: 0.15rem;
+	margin-bottom: 0.15rem;
 }
 
 .preparation-time ul li:first-of-type {
-  line-height: 1.7;
+	line-height: 1.7;
 }
 
 .preparation-time ul li {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .preparation-time ul li span {
-  min-width: 100px;
-  display: inline-block;
+	min-width: 100px;
+	display: inline-block;
 }
 
 .preparation-time ul li::before {
-  content: '•';
-  font-size: 1.5rem;
-  color: var(--dark-raspberry);
-  margin-right: 1.5rem;
+	content: '•';
+	font-size: 1.5rem;
+	color: var(--dark-raspberry);
+	margin-right: 1.5rem;
 }
 
 /* Ingredients section */
+.ingredients {
+	padding-bottom: 2.1rem;
+	border-bottom: 1px solid #ccc;
+}
+
 .title {
-  font-family: 'YoungSerif';
-  color: var(--nutmeg);
-  font-size: 1.77rem;
-  font-weight: 400;
-  margin-bottom: 0.6rem;
+	font-family: 'YoungSerif';
+	color: var(--nutmeg);
+	font-size: 1.77rem;
+	font-weight: 400;
+	margin-bottom: 0.6rem;
+
 }
 
 .ingredients ul {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  list-style: none;
+	margin-top: .75rem;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+	list-style: none;
+
 }
 
 .ingredients ul li {
-  display: flex;
-  align-items: center;
-  line-height: 1.4;
+	display: flex;
+	align-items: center;
+	line-height: 1.4;
 }
 
 .ingredients ul li span {
-  display: inline-block;
+	display: inline-block;
 }
 
 .ingredients ul li::before {
-  content: '•';
-  font-size: 1.5rem;
-  color: var(--dark-raspberry);
-  margin-right: 1.5rem;
+	content: '•';
+	font-size: 1.5rem;
+	color: var(--dark-raspberry);
+	margin-right: 1.5rem;
 }
 
+/* Instructions section */
+.instructions {
+	margin-top: 1.52rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid #ccc;
+}
+
+.instructions title {
+	margin-bottom: 1rem;
+}
+
+.instructions ol {
+	counter-reset: item;
+	margin-left: .65rem;
+	margin-top: 1.25rem;
+	padding-left: 0;
+}
+
+.instructions li {
+	display: block;
+	margin-bottom: 0.5em;
+	margin-left: 2em;
+	line-height: 1.5;
+	letter-spacing: .15px;
+}
+
+.instructions li::before {
+	display: inline-block;
+	content: counter(item) ". ";
+	counter-increment: item;
+	width: 2em;
+	margin-left: -2em;
+	font-weight: bold;
+	color: var(--nutmeg);
+}
+
+.instructions li span {
+	font-weight: bold;
+}
+
+/* Nutrition section */
+.nutrition {
+	margin-top: 1.5rem;
+}
+
+.nutrition .title {
+	margin-bottom: 1.2rem;
+}
+
+.nutrition>p {
+	padding-right: .5rem;
+	margin-bottom: .8rem;
+}
+
+
+.nutrition-values {
+	width: 100%;
+}
+
+.nutrition-value {
+	display: flex;
+	width: 100%;
+}
+
+
+.nutrition-value p {
+	padding-block: .7rem;
+	border-bottom: 1px solid #ccc;
+}
+
+.nutrition-value p:first-of-type {
+	width: 52%;
+	padding-left: 2rem;
+}
+
+.nutrition-value p:nth-of-type(2) {
+	font-weight: bold;
+	color: var(--nutmeg);
+	flex: auto;
+}
+
+
+/* 
+  *****************************
+  MEDIA QUEIRES
+  ***************************** */
 @media screen and (min-width: 768px) {
-  body {
-    min-height: 1995px;
-    background-color: var(--eggshell);
-  }
+	body {
+		min-height: 1995px;
+		background-color: var(--eggshell);
+	}
 
-  body::before {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: url('../../design/desktop-design2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: -1.3rem;
-    z-index: -1;
-    opacity: 0.7;
-    margin-top: -8.75rem;
-    border: 1px solid green;
-  }
+	body::before {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: url('../../design/desktop-design2.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-top: -1.3rem;
+		z-index: -1;
+		opacity: 0.7;
+		margin-top: -8.75rem;
+		border: 1px solid green;
+	}
 
-  .container {
-    margin-top: 8.75rem;
-    max-width: 738px;
-    opacity: 0.5;
-    border: 1px solid red;
-    padding: 2.4rem;
-  }
+	.container {
+		margin-top: 8.75rem;
+		max-width: 738px;
+		opacity: 0.5;
+		border: 1px solid red;
+		padding: 2.4rem;
+	}
 }
