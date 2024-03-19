@@ -43,10 +43,10 @@ body {
 	font-style: normal;
 	background-color: var(--white);
 	position: relative;
-	min-height: 2043px;
+	/* min-height: 2043px; */
 }
 
-body::before {
+/* body::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -57,7 +57,7 @@ body::before {
 	background-position: center;
 
 	z-index: -1;
-}
+} */
 
 a {
 	text-decoration: none;
@@ -82,7 +82,7 @@ ul {
 	width: 100%;
 	max-width: 375px;
 	margin: 0 auto;
-	opacity: 0.6;
+	/* opacity: 0.6; */
 }
 
 .container img {
@@ -110,7 +110,7 @@ h1 {
 /*=============== Preparation time ===============*/
 .preparation-time {
 	margin-top: 2rem;
-	margin-bottom: 1.45rem;
+	margin-bottom: 1.4rem;
 	padding: 1.4rem 1.7rem;
 	background: var(--rose-white);
 	border-radius: 0.5rem;
@@ -119,7 +119,7 @@ h1 {
 .preparation-time h3 {
 	color: var(--dark-raspberry);
 	letter-spacing: 0.75px;
-	margin-bottom: 0.7rem;
+	margin-bottom: 0.75rem;
 }
 
 .preparation-time ul {
@@ -150,7 +150,7 @@ h1 {
 	content: '•';
 	font-size: 1.5rem;
 	color: var(--dark-raspberry);
-	margin-right: 1.5rem;
+	margin-right: 1.65rem;
 }
 
 /* Ingredients section */
@@ -281,11 +281,11 @@ h1 {
   ***************************** */
 @media screen and (min-width: 768px) {
 	body {
-		min-height: 1995px;
+		/* min-height: 1995px; */
 		background-color: var(--eggshell);
 	}
 
-	body::before {
+	/* body::before {
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -300,13 +300,75 @@ h1 {
 		opacity: 0.7;
 		margin-top: -8.75rem;
 		border: 1px solid green;
-	}
+	} */
 
 	.container {
-		margin-top: 8.75rem;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+		margin-block: 8.75rem;
 		max-width: 738px;
-		opacity: 0.5;
-		border: 1px solid red;
-		padding: 2.4rem;
+		padding: 2.55rem 2.45rem 1rem;
+		border-radius: 1.5rem;
+
+		/* For editting */
+		/* border: 1px solid red; */
+		/* opacity: 0.5; */
+	}
+
+	.container img {
+		border-radius: 1rem;
+	}
+
+	.container-wrapper {
+		padding: 2.25rem 0 1rem;
+	}
+
+	.container-wrapper h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1.25rem;
+	}
+
+	/* Preparation section */
+	.preparation-time {
+		margin-bottom: 1.6rem;
+		padding: 1.55rem 1.8rem;
+	}
+
+	.preparation-time h3 {
+		margin-bottom: 0.6rem;
+	}
+
+	.preparation-time ul li {
+		letter-spacing: .2px;
+	}
+
+	.preparation-time ul li:first-of-type {
+		line-height: 1.5;
+	}
+
+	.preparation-time ul li:not(:last-child) {
+		margin-bottom: 0rem;
+	}
+
+	/* Ingredients section */
+	.ingredients {
+		padding-bottom: 2.1rem;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.title {
+		margin-bottom: 0.6rem;
+	}
+
+	.ingredients {
+		padding-bottom: 1.5rem;
+	}
+
+	.ingredients ul {
+		margin-top: 1rem;
+
+	}
+
+	.ingredients ul li {
+		line-height: 1.35;
 	}
 }
