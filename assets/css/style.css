@@ -43,6 +43,7 @@ body {
 	font-style: normal;
 	background-color: var(--white);
 	position: relative;
+	color: var(--dark-charcoal);
 	/* min-height: 2043px; */
 }
 
