@@ -277,6 +277,10 @@ h1 {
 	flex: auto;
 }
 
+.nutrition-value:not(:last-child) p {
+  border-bottom: 1px solid var(--light-grey); 
+}
+
 
 /* 
   *****************************
