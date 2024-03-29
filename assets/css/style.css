@@ -263,7 +263,6 @@ h1 {
 
 .nutrition-value p {
 	padding-block: .7rem;
-	border-bottom: 1px solid #ccc;
 }
 
 .nutrition-value p:first-of-type {
