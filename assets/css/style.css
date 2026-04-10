@@ -1,17 +1,17 @@
 /*  Outfit font */
 @font-face {
-  font-family: "Outfit";
+  font-family: 'Outfit';
   /* Choose a suitable font name */
-  src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 /*  Young Serif font */
 @font-face {
-  font-family: "YoungSerif";
+  font-family: 'YoungSerif';
   /* Choose a suitable font name */
-  src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +37,7 @@
 
 /*=============== BASE ===============*/
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 16px;
   font-optical-sizing: auto;
   font-style: normal;
@@ -96,7 +96,7 @@ ul {
 }
 
 h1 {
-  font-family: "YoungSerif", serif;
+  font-family: 'YoungSerif', serif;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -149,7 +149,7 @@ h1 {
 }
 
 .preparation-time ul li::before {
-  content: "•";
+  content: '•';
   font-size: 1.5rem;
   color: var(--dark-raspberry);
   margin-right: 1.65rem;
@@ -162,7 +162,7 @@ h1 {
 }
 
 .title {
-  font-family: "YoungSerif";
+  font-family: 'YoungSerif';
   color: var(--nutmeg);
   font-size: 1.77rem;
   font-weight: 400;
@@ -187,7 +187,7 @@ h1 {
 }
 
 .ingredients ul li::before {
-  content: "•";
+  content: '•';
   font-size: 1.5rem;
   color: var(--dark-raspberry);
   margin-right: 1.5rem;
@@ -221,7 +221,7 @@ h1 {
 
 .instructions li::before {
   display: inline-block;
-  content: counter(item) ". ";
+  content: counter(item) '. ';
   counter-increment: item;
   width: 2em;
   margin-left: -2em;
@@ -280,26 +280,7 @@ h1 {
   border-bottom: 1px solid var(--light-grey);
 }
 
-/* .nutrition-value p {
-  padding-block: 0.7rem;
-}
-
-.nutrition-value p:first-of-type {
-  width: 52%;
-  padding-left: 2rem;
-}
-
-.nutrition-value p:nth-of-type(2) {
-  font-weight: bold;
-  color: var(--nutmeg);
-  flex: auto;
-}
-
-.nutrition-value:not(:last-child) p {
-  border-bottom: 1px solid var(--light-grey);
-} */
-
-/* 
+/*
   *****************************
   MEDIA QUEIRES
   ***************************** */
@@ -309,33 +290,12 @@ h1 {
     background-color: var(--eggshell);
   }
 
-  /* body::before {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		content: '';
-		width: 100%;
-		height: 100%;
-		background: url('../../design/desktop-design2.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		margin-top: -1.3rem;
-		z-index: -1;
-		opacity: 0.7;
-		margin-top: -8.75rem;
-		border: 1px solid green;
-	} */
-
   .container {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-block: 8.75rem;
     max-width: 738px;
     padding: 2.55rem 2.45rem 1rem;
     border-radius: 1.5rem;
-
-    /* For editting */
-    /* border: 1px solid red;
-		 opacity: 0.5; */
   }
 
   .container img {
@@ -393,5 +353,14 @@ h1 {
 
   .ingredients ul li {
     line-height: 1.35;
+  }
+
+  .nutritions-title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .nutrition-description {
+    margin-bottom: 1rem;
   }
 }
