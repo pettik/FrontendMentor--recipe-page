@@ -1,50 +1,50 @@
 /*  Outfit font */
 @font-face {
-	font-family: 'Outfit';
-	/* Choose a suitable font name */
-	src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Outfit";
+  /* Choose a suitable font name */
+  src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*  Young Serif font */
 @font-face {
-	font-family: 'YoungSerif';
-	/* Choose a suitable font name */
-	src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "YoungSerif";
+  /* Choose a suitable font name */
+  src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-	--nutmeg: hsl(14, 45%, 36%);
-	--dark-raspberry: hsl(332, 51%, 32%);
-	--white: hsl(0, 0%, 100%);
-	--rose-white: hsl(330, 100%, 98%);
-	--eggshell: hsl(30, 54%, 90%);
-	--light-grey: hsl(30, 18%, 87%);
-	--wenge-brown: hsl(30, 10%, 34%);
-	--dark-charcoal: hsl(24, 5%, 18%);
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
 }
 
 /*=============== BASE ===============*/
 body {
-	font-family: 'Outfit', sans-serif;
-	font-size: 16px;
-	font-optical-sizing: auto;
-	font-style: normal;
-	background-color: var(--white);
-	position: relative;
-	color: var(--wenge-brown);
-	/* min-height: 2043px; */
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--white);
+  position: relative;
+  color: var(--wenge-brown);
+  /* min-height: 2043px; */
 }
 
 /* body::before {
@@ -61,237 +61,255 @@ body {
 } */
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-	width: 100%;
+  width: 100%;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 .attribution {
-	display: none;
+  display: none;
 }
 
 /*=============== MAIN ===============*/
 
 .container {
-	background: var(--white);
-	width: 100%;
-	max-width: 375px;
-	margin: 0 auto;
-	/* opacity: 0.6; */
+  background: var(--white);
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  /* opacity: 0.6; */
 }
 
 .container img {
-	width: 100%;
-	min-height: 171px;
+  width: 100%;
+  min-height: 171px;
 }
 
 .container-wrapper {
-	padding: 2rem 1.8rem .5rem 1.9rem;
+  padding: 2rem 1.8rem 0.5rem 1.9rem;
 }
 
 h1 {
-	font-family: 'YoungSerif', serif;
-	font-weight: 400;
-	font-size: 2.25rem;
-	line-height: 1.1;
-	margin-bottom: 1.25rem;
-	color:var(--dark-charcoal);
+  font-family: "YoungSerif", serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  color: var(--dark-charcoal);
 }
 
 .container-wrapper p {
-	line-height: 1.5;
-
+  line-height: 1.5;
 }
 
 /*=============== Preparation time ===============*/
 .preparation-time {
-	margin-top: 2rem;
-	margin-bottom: 1.4rem;
-	padding: 1.4rem 1.7rem;
-	background: var(--rose-white);
-	border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  padding: 1.4rem 1.7rem;
+  background: var(--rose-white);
+  border-radius: 0.5rem;
 }
 
 .preparation-time h2 {
-	color: var(--dark-raspberry);
-	letter-spacing: 0.75px;
-	margin-bottom: 0.75rem;
-	font-size: 1.2rem;
+  color: var(--dark-raspberry);
+  letter-spacing: 0.75px;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .preparation-time ul {
-	padding-right: 0.85rem;
-	padding-left: 0.25rem;
-	list-style: none;
+  padding-right: 0.85rem;
+  padding-left: 0.25rem;
+  list-style: none;
 }
 
 .preparation-time ul li:not(:last-child) {
-	margin-bottom: 0.15rem;
+  margin-bottom: 0.15rem;
 }
 
 .preparation-time ul li:first-of-type {
-	line-height: 1.7;
+  line-height: 1.7;
 }
 
 .preparation-time ul li {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .preparation-time ul li span {
-	min-width: 100px;
-	display: inline-block;
+  min-width: 100px;
+  display: inline-block;
 }
 
 .preparation-time ul li::before {
-	content: '•';
-	font-size: 1.5rem;
-	color: var(--dark-raspberry);
-	margin-right: 1.65rem;
+  content: "•";
+  font-size: 1.5rem;
+  color: var(--dark-raspberry);
+  margin-right: 1.65rem;
 }
 
 /* Ingredients section */
 .ingredients {
-	padding-bottom: 2.1rem;
-	border-bottom: 1px solid #ccc;
+  padding-bottom: 2.1rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .title {
-	font-family: 'YoungSerif';
-	color: var(--nutmeg);
-	font-size: 1.77rem;
-	font-weight: 400;
-	margin-bottom: 0.6rem;
-
+  font-family: "YoungSerif";
+  color: var(--nutmeg);
+  font-size: 1.77rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
 }
 
 .ingredients ul {
-	margin-top: .75rem;
-	padding-right: 0.5rem;
-	padding-left: 0.5rem;
-	list-style: none;
-
+  margin-top: 0.75rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  list-style: none;
 }
 
 .ingredients ul li {
-	display: flex;
-	align-items: center;
-	line-height: 1.4;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
 }
 
 .ingredients ul li span {
-	display: inline-block;
+  display: inline-block;
 }
 
 .ingredients ul li::before {
-	content: '•';
-	font-size: 1.5rem;
-	color: var(--dark-raspberry);
-	margin-right: 1.5rem;
+  content: "•";
+  font-size: 1.5rem;
+  color: var(--dark-raspberry);
+  margin-right: 1.5rem;
 }
 
 /* Instructions section */
 .instructions {
-	margin-top: 1.52rem;
-	padding-bottom: 1.5rem;
-	border-bottom: 1px solid #ccc;
+  margin-top: 1.52rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .instructions title {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .instructions ol {
-	counter-reset: item;
-	margin-left: .65rem;
-	margin-top: 1.25rem;
-	padding-left: 0;
+  counter-reset: item;
+  margin-left: 0.65rem;
+  margin-top: 1.25rem;
+  padding-left: 0;
 }
 
 .instructions li {
-	display: block;
-	margin-bottom: 0.5em;
-	margin-left: 2em;
-	line-height: 1.5;
-	letter-spacing: .15px;
+  display: block;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
 }
 
 .instructions li::before {
-	display: inline-block;
-	content: counter(item) ". ";
-	counter-increment: item;
-	width: 2em;
-	margin-left: -2em;
-	font-weight: bold;
-	color: var(--nutmeg);
+  display: inline-block;
+  content: counter(item) ". ";
+  counter-increment: item;
+  width: 2em;
+  margin-left: -2em;
+  font-weight: bold;
+  color: var(--nutmeg);
 }
 
 .instructions li span {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /* Nutrition section */
 .nutrition {
-	margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .nutrition .title {
-	margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
-.nutrition>p {
-	padding-right: .5rem;
-	margin-bottom: .8rem;
+.nutrition > p {
+  padding-right: 0.5rem;
+  margin-bottom: 0.8rem;
 }
-
 
 .nutrition-values {
-	width: 100%;
+  width: 100%;
 }
 
 .nutrition-value {
-	display: flex;
-	width: 100%;
+  display: flex;
+  width: 100%;
 }
 
+.nutrition-values {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-.nutrition-value p {
-	padding-block: .7rem;
+.nutrition-values th,
+.nutrition-values td {
+  padding: 0.7rem 2rem;
+  text-align: left;
+}
+
+.nutrition-values th {
+  font-weight: normal;
+}
+
+.nutrition-values td {
+  font-weight: bold;
+  color: var(--nutmeg);
+}
+
+.nutrition-values tr:not(:last-child) {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+/* .nutrition-value p {
+  padding-block: 0.7rem;
 }
 
 .nutrition-value p:first-of-type {
-	width: 52%;
-	padding-left: 2rem;
+  width: 52%;
+  padding-left: 2rem;
 }
 
 .nutrition-value p:nth-of-type(2) {
-	font-weight: bold;
-	color: var(--nutmeg);
-	flex: auto;
+  font-weight: bold;
+  color: var(--nutmeg);
+  flex: auto;
 }
 
 .nutrition-value:not(:last-child) p {
-  border-bottom: 1px solid var(--light-grey); 
-}
-
+  border-bottom: 1px solid var(--light-grey);
+} */
 
 /* 
   *****************************
   MEDIA QUEIRES
   ***************************** */
 @media screen and (min-width: 768px) {
-	body {
-		min-height: 1995px;
-		background-color: var(--eggshell);
-	}
+  body {
+    min-height: 1995px;
+    background-color: var(--eggshell);
+  }
 
-	/* body::before {
+  /* body::before {
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -308,73 +326,72 @@ h1 {
 		border: 1px solid green;
 	} */
 
-	.container {
-		box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-		margin-block: 8.75rem;
-		max-width: 738px;
-		padding: 2.55rem 2.45rem 1rem;
-		border-radius: 1.5rem;
+  .container {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-block: 8.75rem;
+    max-width: 738px;
+    padding: 2.55rem 2.45rem 1rem;
+    border-radius: 1.5rem;
 
-		/* For editting */
-		/* border: 1px solid red;
+    /* For editting */
+    /* border: 1px solid red;
 		 opacity: 0.5; */
-	}
+  }
 
-	.container img {
-		border-radius: 1rem;
-	}
+  .container img {
+    border-radius: 1rem;
+  }
 
-	.container-wrapper {
-		padding: 2.25rem 0 1rem;
-	}
+  .container-wrapper {
+    padding: 2.25rem 0 1rem;
+  }
 
-	.container-wrapper h1 {
-		font-size: 2.5rem;
-		margin-bottom: 1.25rem;
-	}
+  .container-wrapper h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
 
-	/* Preparation section */
-	.preparation-time {
-		margin-bottom: 1.6rem;
-		padding: 1.55rem 1.8rem;
-	}
+  /* Preparation section */
+  .preparation-time {
+    margin-bottom: 1.6rem;
+    padding: 1.55rem 1.8rem;
+  }
 
-	.preparation-time h2 {
-		margin-bottom: 0.6rem;
-	}
+  .preparation-time h2 {
+    margin-bottom: 0.6rem;
+  }
 
-	.preparation-time ul li {
-		letter-spacing: .2px;
-	}
+  .preparation-time ul li {
+    letter-spacing: 0.2px;
+  }
 
-	.preparation-time ul li:first-of-type {
-		line-height: 1.5;
-	}
+  .preparation-time ul li:first-of-type {
+    line-height: 1.5;
+  }
 
-	.preparation-time ul li:not(:last-child) {
-		margin-bottom: 0rem;
-	}
+  .preparation-time ul li:not(:last-child) {
+    margin-bottom: 0rem;
+  }
 
-	/* Ingredients section */
-	.ingredients {
-		padding-bottom: 2.1rem;
-		border-bottom: 1px solid #ccc;
-	}
+  /* Ingredients section */
+  .ingredients {
+    padding-bottom: 2.1rem;
+    border-bottom: 1px solid #ccc;
+  }
 
-	.title {
-		margin-bottom: 0.6rem;
-	}
+  .title {
+    margin-bottom: 0.6rem;
+  }
 
-	.ingredients {
-		padding-bottom: 1.5rem;
-	}
+  .ingredients {
+    padding-bottom: 1.5rem;
+  }
 
-	.ingredients ul {
-		margin-top: 1rem;
+  .ingredients ul {
+    margin-top: 1rem;
+  }
 
-	}
-
-	.ingredients ul li {
-		line-height: 1.35;
-	}
+  .ingredients ul li {
+    line-height: 1.35;
+  }
 }
