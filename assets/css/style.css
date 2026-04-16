@@ -158,7 +158,7 @@ h1 {
 /* Ingredients section */
 .ingredients {
   padding-bottom: 2.1rem;
-  border-bottom: 0.0625rem solid #ccc;
+  border-bottom: 0.0625rem solid var(--light-grey);
 }
 
 .title {
@@ -197,7 +197,7 @@ h1 {
 .instructions {
   margin-top: 1.52rem;
   padding-bottom: 1.5rem;
-  border-bottom: 0.0625rem solid #ccc;
+  border-bottom: 0.0625rem solid var(--light-grey);
 }
 
 .instructions .title {
@@ -336,7 +336,7 @@ h1 {
   /* Ingredients section */
   .ingredients {
     padding-bottom: 2.1rem;
-    border-bottom: 0.0625rem solid #ccc;
+    border-bottom: 0.0625rem solid var(--light-grey);
   }
 
   .title {
