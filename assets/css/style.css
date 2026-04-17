@@ -1,17 +1,17 @@
 /*  Outfit font */
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   /* Choose a suitable font name */
-  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 /*  Young Serif font */
 @font-face {
-  font-family: 'YoungSerif';
+  font-family: "YoungSerif";
   /* Choose a suitable font name */
-  src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +37,7 @@
 
 /*=============== BASE ===============*/
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1rem;
   font-optical-sizing: auto;
   font-style: normal;
@@ -96,7 +96,7 @@ ul {
 }
 
 h1 {
-  font-family: 'YoungSerif', serif;
+  font-family: "YoungSerif", serif;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -130,17 +130,19 @@ h1 {
   list-style: none;
 }
 
-.preparation-time ul li:not(:last-child) {
-  margin-bottom: 0.15rem;
+/* 1. základ */
+.preparation-time ul li {
+  display: flex;
+  align-items: center;
 }
 
+/* 2. specifické případy */
 .preparation-time ul li:first-of-type {
   line-height: 1.7;
 }
 
-.preparation-time ul li {
-  display: flex;
-  align-items: center;
+.preparation-time ul li:not(:last-child) {
+  margin-bottom: 0.15rem;
 }
 
 .preparation-time ul li span {
@@ -149,7 +151,7 @@ h1 {
 }
 
 .preparation-time ul li::before {
-  content: '•';
+  content: "•";
   font-size: 1.5rem;
   color: var(--dark-raspberry);
   margin-right: 1.65rem;
@@ -162,7 +164,7 @@ h1 {
 }
 
 .title {
-  font-family: 'YoungSerif';
+  font-family: "YoungSerif";
   color: var(--nutmeg);
   font-size: 1.77rem;
   font-weight: 400;
@@ -187,7 +189,7 @@ h1 {
 }
 
 .ingredients ul li::before {
-  content: '•';
+  content: "•";
   font-size: 1.5rem;
   color: var(--dark-raspberry);
   margin-right: 1.5rem;
@@ -221,7 +223,7 @@ h1 {
 
 .instructions li::before {
   display: inline-block;
-  content: counter(item) '. ';
+  content: counter(item) ". ";
   counter-increment: item;
   width: 2em;
   margin-left: -2em;
