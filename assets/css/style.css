@@ -1,21 +1,15 @@
 /*  Outfit font */
 @font-face {
-  font-family: "Outfit";
-  src:
-    url("../fonts/outfit/Outfit-VariableFont_wght.woff2") format("woff2"),
-    url("../fonts/outfit/Outfit-VariableFont_wght.woff") format("woff"),
-    url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Outfit';
+  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "YoungSerif";
-  src:
-    url("../fonts/young-serif/YoungSerif-Regular.woff2") format("woff2"),
-    url("../fonts/young-serif/YoungSerif-Regular.woff") format("woff"),
-    url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-family: 'YoungSerif';
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -42,7 +36,7 @@
 
 /*=============== BASE ===============*/
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1rem;
   font-optical-sizing: auto;
   font-style: normal;
@@ -101,7 +95,7 @@ ul {
 }
 
 h1 {
-  font-family: "YoungSerif", serif;
+  font-family: 'YoungSerif', serif;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -156,7 +150,7 @@ h1 {
 }
 
 .preparation-time ul li::before {
-  content: "•";
+  content: '•';
   font-size: 1.5rem;
   color: var(--dark-raspberry);
   margin-right: 1.65rem;
@@ -169,7 +163,7 @@ h1 {
 }
 
 .title {
-  font-family: "YoungSerif";
+  font-family: 'YoungSerif';
   color: var(--nutmeg);
   font-size: 1.77rem;
   font-weight: 400;
@@ -194,7 +188,7 @@ h1 {
 }
 
 .ingredients ul li::before {
-  content: "•";
+  content: '•';
   font-size: 1.5rem;
   color: var(--dark-raspberry);
   margin-right: 1.5rem;
@@ -228,7 +222,7 @@ h1 {
 
 .instructions li::before {
   display: inline-block;
-  content: counter(item) ". ";
+  content: counter(item) '. ';
   counter-increment: item;
   width: 2em;
   margin-left: -2em;
